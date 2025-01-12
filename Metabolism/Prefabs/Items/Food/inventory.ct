@@ -1,0 +1,48 @@
+InventoryItemComponent {
+ Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+  ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+   Name "Canteen"
+   Description ""
+   m_aItemHints {
+    SCR_InventoryItemHintUIInfo "{5E04DAAE66DE1E77}" {
+     Name "H:-10  T:-30  R:0  P:0  W:0  E:0"
+     Description ""
+     Icon ""
+     IconSetName ""
+    }
+   }
+  }
+  ItemAnimationAttributes ItemAnimationAttributes "{59ECB1453144E05D}" {
+   AnimIkposeBlendDuration 1.26
+   AnimationAttachments {
+    AnimationAttachmentInfo "{55EAD7272ED1ABB5}" {
+     AnimGraph "{83CA8D6E3257795E}anims/New_drink/water_drink.agr"
+     AnimInstance "{CA5C972EA5FD0CA7}anims/New_drink/water_drink_player.asi"
+    }
+   }
+   HandAdditiveRotation 0 0 -90
+   HandAdditiveTranslation 0.1 0.03 -0.01
+   AllowInspection 0
+  }
+  CustomAttributes {
+   SCR_AlternativeModel "{59E68C742A7C6A5F}" {
+    m_sAlternativeModel "{43C3228D56519502}Assets/Items/Equipment/Canteens/Canteen_Soviet/Canteen_Soviet_01.xob"
+   }
+   SCR_ItemOfInterestAttribute "{5EBCA645134AC0EF}" {
+    m_InterestType NONE
+   }
+   PreviewRenderAttributes "{5A5AEE4B8FF125F0}" {
+    CameraPreset Front
+    CameraOrbitAngles -25 25 0
+    CameraDistanceToItem 1
+    ItemRenderRotation 0 0 0
+    FOV 10
+    LodModel 0
+   }
+   SCR_SelectionMenuPreviewAttributes "{5EC2E10565C06A53}" {
+    m_bShowMedicalColor 1
+   }
+  }
+  CommonItemType "NONE"
+ }
+}

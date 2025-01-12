@@ -1,0 +1,237 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 20493
+   name "Signal 20"
+   tl -683 -669
+   res "{4C67276337A4DE90}Sounds/CookingSoundSignal.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 22
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass connection {
+         id 19468
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    14 22
+   }
+   outputsport {
+    2 24
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{4C67276337A4DE90}Sounds/CookingSoundSignal.sig"
+  }
+ }
+ sounds {
+  SoundClass {
+   id 6153
+   name "SOUND_COOK"
+   version 5
+   tl 161.145 -490.855
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 3090
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+   pu {
+    2 0
+   }
+   outState 8203
+   outStatePort 79879
+   noInAudible 0
+   bypassVolumeTest 1
+  }
+ }
+ mixers {
+  MixerClass {
+   id 8203
+   name "OutputState 8"
+   version 4
+   tl 464.298 -490.875
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 79879
+     links {
+      ConnectionClass connection {
+       id 6153
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    16384 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "Dialog_Delay_Exterior"
+   }
+  }
+ }
+ constants {
+  ConstantClass {
+   id 19468
+   name "Constant 19"
+   version 5
+   tl -912.804 -648.364
+   "Constant values" {
+    IOPConstantsValueClass zero {
+     Key "zero"
+     Value 0.001
+     Port 1
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 3090
+   name "Shader 3"
+   version 5
+   tl -131.474 -493.598
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 5148
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 2067
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 4117
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 9220
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass {
+   id 2067
+   name "Amplitude 2"
+   version 5
+   tl -452.472 -468.138
+   curve SCurve
+   innerRange 0
+   outerRange 25
+  }
+ }
+ frequency {
+  FrequencyClass {
+   id 4117
+   name "Frequency 4"
+   version 5
+   tl -445.182 -372.273
+   dynamicUpdate 1
+   enableDistanceAtt 1
+   type AirAbsorption
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 9220
+   name "Bank 9"
+   version 7
+   tl -451.191 -665.615
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 20493
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 20493
+       port 24
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+   pu {
+    3 0
+   }
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{0154AFDA2A0FD947}Sounds/cooking.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 5148
+   name "Spatiality 5"
+   version 5
+   tl -446.818 -557.364
+   spatialFactor 1
+  }
+ }
+ version 1
+ sourcesLimit 8
+ listenerWindowModel "{9F3AF591CD6DFE1A}Assets/Characters/Basebody/Basebody_Male_01.xob"
+}

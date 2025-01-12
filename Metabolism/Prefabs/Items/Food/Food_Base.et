@@ -1,0 +1,49 @@
+GenericEntity {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{644832346ECA7CC2}" {
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{644832346813DE92}" {
+     SizeSetupStrategy Volume
+     ItemVolume 1
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{644832346BECA03F}" {
+    }
+    CommonItemType "FOOD"
+   }
+  }
+  MeshObject "{644832344A97D16D}" {
+  }
+  SCR_FoodGadgetComponent "{644832341D2198DD}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 15
+   m_iEnergyValue 25
+  }
+  ActionsManagerComponent "{64483237A29E82D7}" {
+   ActionContexts {
+    UserActionContext "{64483237BC103E88}" {
+     ContextName "default"
+     Position PointInfo "{64483237BBAB0337}" {
+     }
+     LineOfSightCheck 1
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{64483237B688E164}" {
+     ParentContextList {
+      "default"
+     }
+    }
+    SCR_EquipGadgetAction "{64483237B3445172}" {
+     ParentContextList {
+      "default"
+     }
+    }
+   }
+  }
+  RplComponent "{64483234460C4B5C}" {
+  }
+ }
+}

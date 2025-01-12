@@ -1,0 +1,122 @@
+GenericEntity : "{AA96C0FB1A65B886}Prefabs/Props/Military/FieldKitchenTrailerUSSR_01.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{64524EFDF5BF4A2D}" {
+  }
+  SoundComponent "{64524EFDF11E7702}" {
+   Filenames {
+    "{A2143413193963FB}Sounds/Cooking.acp"
+   }
+   OnFrameUpdate 1
+   ScriptCallbacks 1
+   IncludeInactive 1
+   SoundPoints {
+    SoundPointInfo COOK {
+     Offset 0 1.2103 -0.9415
+    }
+   }
+  }
+  MIKE_CookingManagerComponent "{64524EFDF29EC9F8}" {
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{64524EFB8808D33E}" {
+    m_sSoundProject "{A2143413193963FB}Sounds/Cooking.acp"
+    m_sSoundEventName "SOUND_COOK"
+   }
+  }
+  MIKE_RecipeManagerComponent "{64524EFDCE2AE3B9}" {
+   RecipeConfig MIKE_CfgRecipe "{64524EFBA9D42B69}" {
+    weightedRecipes {
+     WeightedRecipe "{64524EFBA8C760B1}" {
+      ingredients {
+       "{850240C4094FC325}Prefabs/Items/Food/RawMeat.et"
+      }
+      Tier1ItemResult "{850240C4094FC325}Prefabs/Items/Food/RawMeat.et"
+      Tier2ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+      Tier3ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+      Tier4ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+      Tier5ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+     }
+     WeightedRecipe "{64524EFBAB6EBCEC}" {
+      ingredients {
+       "{C113B2842221D02A}Prefabs/Items/Food/RAwSteak.et"
+      }
+      Tier1ItemResult "{C113B2842221D02A}Prefabs/Items/Food/RAwSteak.et"
+      Tier2ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+      Tier3ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+      Tier4ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+      Tier5ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{64524EFDD874C64A}" : "{EFCDDC88110CB19E}Prefabs/Props/Military/cook.ct" {
+  }
+  SlotManagerComponent "{64524EFDD200DAA3}" {
+   Slots {
+    EntitySlotInfo control {
+     Offset -0.6193 1.1172 -1.2543
+     Angles 0 -90 0
+     Prefab "{C1E195E625940F80}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_03.et"
+    }
+    EntitySlotInfo control2 {
+     Offset -0.6193 1.1172 -1.399
+     Angles 0 -90 0
+     Prefab "{C1E195E625940F80}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_03.et"
+    }
+    EntitySlotInfo control3 {
+     Offset -0.6193 1.1172 -1.5422
+     Angles 0 -90 0
+     Prefab "{C1E195E625940F80}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_03.et"
+    }
+    EntitySlotInfo control5 {
+     Offset -0.6193 1.1172 -1.6928
+     Angles 0 -90 0
+     Prefab "{C1E195E625940F80}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_03.et"
+    }
+    EntitySlotInfo control4 {
+     Offset -0.6193 1.1172 -1.8376
+     Angles 0 -90 0
+     Prefab "{C1E195E625940F80}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_03.et"
+    }
+    EntitySlotInfo control6 {
+     Offset -0.387 1.1172 -1.875
+     Angles 0 180 0
+     Prefab "{C1E195E625940F80}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_03.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{64524EFDC2D707B0}" : "{A5DFCE4F1BAE7154}Prefabs/Props/Military/Action.ct" {
+   ActionContexts {
+    UserActionContext "{64512E198883D258}" {
+     Position PointInfo "{64512E198883D242}" {
+      Offset -0.3948 1.1266 -1.9925
+     }
+    }
+    UserActionContext "{64512E198883D24F}" {
+     Position PointInfo "{64512E198883D24E}" {
+      Offset -0.7266 1.1166 -1.3982
+     }
+    }
+    UserActionContext "{64512E198883D24B}" {
+     Position PointInfo "{64512E198883D24A}" {
+      Offset -0.707 1.0975 -1.2482
+     }
+    }
+    UserActionContext "{64512E198883D3B5}" {
+     Position PointInfo "{64512E198883D3B4}" {
+      Offset -0.7207 1.1131 -1.838
+     }
+    }
+    UserActionContext "{64512E198883D3B7}" {
+     Position PointInfo "{64512E198883D3B6}" {
+      Offset -0.7268 1.1211 -1.5439
+     }
+    }
+    UserActionContext "{64512E198883D3B1}" {
+     Position PointInfo "{64512E198883BA35}" {
+      Offset -0.7219 1.1204 -1.6947
+     }
+    }
+   }
+  }
+ }
+}

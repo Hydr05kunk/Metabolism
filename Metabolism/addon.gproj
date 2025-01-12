@@ -1,0 +1,22 @@
+GameProject {
+ ID "Metabolism"
+ GUID "64482B05BDE02C94"
+ TITLE "Metabolism"
+ Dependencies {
+  "58D0FB3206B6F859" "632406428E56F284"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

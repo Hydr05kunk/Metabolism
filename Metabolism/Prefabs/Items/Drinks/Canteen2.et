@@ -1,0 +1,68 @@
+GenericEntity : "{693D54F74C95B3D6}Prefabs/Items/Drinks/Drink_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{6451188F88835441}" {
+     Name "Canteen"
+     Description "++Hydration"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6451188F8883545D}" {
+     SizeSetupStrategy Volume
+     ItemVolume 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{6451188F88835458}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{6451188F88835456}" {
+       AnimGraph "{883777E45A6C4DA1}Assets/Items/Medicine/Workspaces/Gauze_01.agr"
+       AnimInstance "{79BD98038DD60F88}Assets/Items/Medicine/Workspaces/Gauze_01_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveRotation 0 0 -90
+     HandAdditiveTranslation 0.12 0.02 0
+    }
+    m_bStackable 0
+   }
+  }
+  MeshObject "{64483235CFF7D812}" {
+   Object "{43C3228D56519502}Assets/Items/Equipment/Canteens/Canteen_Soviet/Canteen_Soviet_01.xob"
+  }
+  ActionsManagerComponent "{64483235D833E943}" {
+   ActionContexts {
+    UserActionContext "{6451188F88835465}" {
+     ContextName "default"
+     Position PointInfo "{6451188F8880D2E3}" {
+      Offset 0 0.2115 0
+     }
+     LineOfSightCheck 1
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{64483234D52F0E7F}" {
+     UIInfo UIInfo "{6451188F8880D2F9}" {
+      Name "Pick Up Canteen"
+     }
+     ActionTitle "Pick Up Canteen"
+    }
+    SCR_EquipGadgetAction "{64483234DC86D890}" {
+     UIInfo UIInfo "{6451188F8880D2F8}" {
+      Name "Equip"
+     }
+     ActionTitle "Equip"
+    }
+    SCR_EquipGadgetAction "{6451188F8880D2F0}" {
+     ParentContextList {
+     }
+    }
+    SCR_PickUpItemAction "{6451188F8880D2F1}" {
+     ParentContextList {
+     }
+    }
+   }
+  }
+ }
+ coords 3382.887 3.998 2170.088
+}

@@ -1,0 +1,106 @@
+GenericEntity : "{11A0CDC0F1F29205}Prefabs/Items/Food/MRE.et" {
+ coords 3382.969 3.998 2168.932
+}
+GenericEntity : "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et" {
+ coords 3382.474 3.998 2170.178
+}
+GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+ coords 3381.247 3.105 2171.331
+}
+GenericEntity : "{693D54F74C95B3D6}Prefabs/Items/Drinks/Drink_Base.et" {
+ coords 3382.915 3.998 2170.694
+}
+GenericEntity : "{757FCCE8E756175C}Prefabs/Props/Furniture/MeetingTable_01.et" {
+ coords 3382.657 3.092 2169.742
+ angleY -89.977
+}
+GenericEntity : "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et" {
+ coords 3382.424 3.998 2169.316
+}
+GenericEntity : "{850240C4094FC325}Prefabs/Items/Food/RawMeat.et" {
+ coords 3382.535 3.998 2169.746
+}
+GenericEntity : "{89CE06A0BB740953}Prefabs/Items/Drinks/Canteen2.et" {
+ coords 3382.887 3.998 2170.088
+}
+GenericEntity : "{96698340A4E67BF7}Prefabs/Items/Food/Crackers.et" {
+ coords 3382.956 3.998 2169.22
+}
+GenericEntity : "{976C24AE1673E2D2}PrefabsEditable/Auto/Props/Military/E_FieldKitchenTrailerUSSR_01.et" {
+ components {
+  SoundComponent "{64524EFDF11E7702}" {
+   Filenames {
+    "{CCCB95E8D7BF34E9}Sounds/CookingSound.acp"
+   }
+  }
+  MIKE_CookingManagerComponent "{64524EFDF29EC9F8}" {
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{64524EFB8808D33E}" {
+    m_sSoundProject "{CCCB95E8D7BF34E9}Sounds/CookingSound.acp"
+    m_eFlags 6
+   }
+   StoveItemPrefab "{976C24AE1673E2D2}PrefabsEditable/Auto/Props/Military/E_FieldKitchenTrailerUSSR_01.et"
+  }
+ }
+ coords 3375.359 3.316 2170.233
+ angleX 2.054
+ angleY 170.744
+ angleZ 1.478
+}
+GenericEntity : "{A231A5F8D479B5DC}Prefabs/Items/Drinks/Canteen.et" {
+ coords 3382.89 3.998 2170.296
+}
+$grp GenericEntity : "{AF2344544F00D1B6}Prefabs/Items/Drinks/Beer.et" {
+ {
+  coords 3382.894 3.998 2170.541
+ }
+ {
+  coords 3382.593 3.998 2170.746
+ }
+ {
+  coords 3382.624 3.998 2170.57
+ }
+ {
+  coords 3382.498 3.998 2170.462
+ }
+ {
+  coords 3382.47 3.998 2170.766
+ }
+ {
+  coords 3382.361 3.998 2170.613
+ }
+ {
+  coords 3382.342 3.998 2170.45
+ }
+ {
+  coords 3382.326 3.998 2170.742
+ }
+}
+GenericEntity : "{C113B2842221D02A}Prefabs/Items/Food/RAwSteak.et" {
+ coords 3382.464 3.998 2168.923
+ angleY 12.563
+}
+GenericEntity : "{C9D661E5B0714711}Prefabs/Items/Food/Apple.et" {
+ coords 3382.937 3.998 2169.4
+}
+GenericEntity : "{C9D925EE8FA5BEA3}PrefabsEditable/Auto/Props/Military/E_FieldKitchenTrailerUS_01.et" {
+ components {
+  SoundComponent "{64512E1B7ACBA00D}" {
+   Filenames {
+    "{CCCB95E8D7BF34E9}Sounds/CookingSound.acp"
+   }
+  }
+  MIKE_CookingManagerComponent "{64512E1B71F9AC0F}" {
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{64512E1A60A37964}" {
+    m_sSoundProject "{CCCB95E8D7BF34E9}Sounds/CookingSound.acp"
+   }
+  }
+  SCR_SoundDataComponent "{645302A5C8DA5F6B}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{645302A5C56891F8}" {
+    }
+   }
+  }
+ }
+ coords 3382.546 3.203 2166.832
+ angleY 90.214
+}

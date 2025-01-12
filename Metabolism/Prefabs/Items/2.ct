@@ -1,0 +1,16 @@
+SCR_SoundDataComponent {
+ m_aAudioSourceConfiguration {
+  SCR_AudioSourceConfiguration "{64483B37167A3CEA}" {
+   m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+   m_sSoundEventName "SOUND_PICK_UP"
+  }
+  SCR_AudioSourceConfiguration "{64483B37167A3CFD}" {
+   m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+   m_sSoundEventName "SOUND_EQUIP"
+  }
+  SCR_AudioSourceConfiguration "{64483B37167A3CFB}" {
+   m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+   m_sSoundEventName "SOUND_DROP"
+  }
+ }
+}

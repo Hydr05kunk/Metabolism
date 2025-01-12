@@ -1,0 +1,27 @@
+SCR_UniversalInventoryStorageComponent {
+ Enabled 1
+ Attributes SCR_ItemAttributeCollection "{64512E1AE2CAE22D}" {
+  ItemDisplayName UIInfo "{64512E1AE2CAE215}" {
+   Name "Cooking Stove"
+  }
+  ItemPhysAttributes ItemPhysicalAttributes "{64512E1AE2CAE216}" {
+   Weight 5
+   SizeSetupStrategy Manual
+   ItemDimensions 20 20 20
+   ItemVolume 5
+  }
+  CustomAttributes {
+   PreviewRenderAttributes "{64512E1AE2CAE210}" {
+    CameraDistanceToItem 2
+    FOV 55
+   }
+  }
+  m_Size SLOT_3x3
+  m_eQuickSlotSize SLOT_3x3
+  m_bStackable 0
+ }
+ UseCapacityCoefficient 0
+ MaxCumulativeVolume 1000000
+ SaveInLoadout 0
+ m_fMaxWeight 100000
+}

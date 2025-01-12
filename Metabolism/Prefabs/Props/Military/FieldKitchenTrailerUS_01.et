@@ -1,0 +1,15 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{64512E1B6A1C5328}" {
+  }
+  SoundComponent "{64512E1B7ACBA00D}" {
+  }
+  MIKE_CookingManagerComponent "{64512E1B71F9AC0F}" {
+  }
+  MIKE_RecipeManagerComponent "{64512E1B4F300EBE}" {
+  }
+  SCR_UniversalInventoryStorageComponent "{64512E1AFCEBDB1E}" : "{EFCDDC88110CB19E}Prefabs/Props/Military/cook.ct" {
+  }
+ }
+}

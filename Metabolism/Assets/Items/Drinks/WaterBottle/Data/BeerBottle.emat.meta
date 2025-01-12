@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BF25E8E5F40776CF}Assets/Items/Drinks/WaterBottle/Data/BeerBottle.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

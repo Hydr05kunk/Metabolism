@@ -1,0 +1,27 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  SoundComponent "{645241F116291434}" {
+   Filenames {
+    "{78CF91BEC2E63C8D}Sounds/Character/Fart.acp"
+   }
+   ScriptCallbacks 1
+   SoundPoints {
+    SoundPointInfo BUTT {
+     Offset 0 0.8691 -0.1792
+     Angles 0 180 0
+    }
+   }
+  }
+  MetabolismComponent "{64482B4A7C0D2D4E}" {
+  }
+  SCR_BaseHUDComponent "{520EA1D2DB118134}" {
+   InfoDisplays {
+    MetabolismHUD "{64485E2CB1F73208}" {
+     m_LayoutPath "{9165B2D1BAEA7F6A}UI/Layouts/Beta.layout"
+     m_eLayer ALWAYS_TOP
+    }
+   }
+  }
+ }
+}

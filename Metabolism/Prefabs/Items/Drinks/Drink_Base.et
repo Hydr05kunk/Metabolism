@@ -1,0 +1,96 @@
+GenericEntity {
+ ID "508AB2013EEE1E00"
+ components {
+  SignalsManagerComponent "{64511B84C2410AA1}" {
+  }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{64483234293FC853}" {
+     Name "Water"
+     Description "+Hydration"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{644832342B61B454}" {
+     Weight 0.01
+     SizeSetupStrategy Volume
+     ItemVolume 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{64483234248B5872}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{64511B84E5E315AC}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+    }
+    CommonItemType "FOOD"
+    m_bStackable 0
+   }
+  }
+  MeshObject "{64483235CFF7D812}" {
+   Object "{1F941A15AF4D93BF}Assets/Items/Drinks/WaterBottle/Bottle.xob"
+  }
+  SCR_HydrationGadgetComponent "{64483235CA1AA839}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 15
+  }
+  SCR_SoundDataComponent "{64511B84D7E3B102}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{64511B84D63C8901}" {
+     m_sSoundProject "{D7CE99AA2FB40C31}Sounds/Items/_SharedData/PickUp/Items_PickUp_Canteen.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{64511B84D614E0F5}" {
+     m_sSoundProject "{D7CE99AA2FB40C31}Sounds/Items/_SharedData/PickUp/Items_PickUp_Canteen.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+    }
+    SCR_AudioSourceConfiguration "{64511B84D6F2C2A7}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  ActionsManagerComponent "{64483235D833E943}" {
+   ActionContexts {
+    UserActionContext "{64483234E1555B8F}" {
+     ContextName "default"
+     Position PointInfo "{64483234E2FC37E0}" {
+      Offset 0 0.1271 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{64483234D52F0E7F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{64511B8461CBAA3C}" {
+      Name "Pick Up Water"
+     }
+     ActionTitle "Pick Up Water"
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{64511B84749954D8}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{64511B847269BBFB}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+    }
+    GamepadTriggerEffect "{64511B844D008204}" {
+     Name "Charged"
+     Priority 30
+    }
+   }
+  }
+  RplComponent "{64483235C38222ED}" {
+  }
+  Hierarchy "{64511B84557ECB70}" {
+  }
+ }
+ coords 3382.915 3.998 2170.694
+}

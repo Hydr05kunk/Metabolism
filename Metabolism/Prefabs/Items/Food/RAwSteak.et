@@ -1,0 +1,77 @@
+GenericEntity : "{61C577C0E2A178A6}Prefabs/Items/Food/Food_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  SignalsManagerComponent "{64483B376A96F402}" : "{E8657FFB1700B32E}Prefabs/Items/1.ct" {
+  }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{64511B8716121C2C}" {
+     Name "Raw Steak"
+     Description "0 Hunger"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{64511B8716121C26}" {
+     Weight 0
+     SizeSetupStrategy Volume
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{64511B8716121C22}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+     AnimationAttachments {
+      AnimationAttachmentInfo "{64511B8716121C3E}" {
+       AnimGraph "{883777E45A6C4DA1}Assets/Items/Medicine/Workspaces/Gauze_01.agr"
+       AnimInstance "{79BD98038DD60F88}Assets/Items/Medicine/Workspaces/Gauze_01_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveRotation 0 0 0
+     HandAdditiveTranslation -0.21 -0.03 0.062
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{64512E1FCF505D0B}" {
+     }
+    }
+    m_bStackable 0
+   }
+  }
+  MeshObject "{644832344A97D16D}" {
+   Object "{4C5DB4BC63F4D4F0}Assets/Items/Food/MeatLeg_01.xob"
+  }
+  SCR_FoodGadgetComponent "{644832341D2198DD}" {
+   m_eAnimVariable MX991
+   m_iEnergyValue 0
+  }
+  SCR_SoundDataComponent "{64483B3765C75C6B}" : "{84314B1BABC43C00}Prefabs/Items/2.ct" {
+  }
+  ActionsManagerComponent "{64483237A29E82D7}" {
+   ActionContexts {
+    UserActionContext "{64483237BC103E88}" {
+     Position PointInfo "{64483237BBAB0337}" {
+      Offset 0 0.0503 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{64483237B688E164}" {
+     UIInfo UIInfo "{64511B8716121C4C}" {
+      Name "Pick Up Raw Steak"
+     }
+     ActionTitle "Pick Up Raw Steak"
+    }
+    SCR_EquipGadgetAction "{64483237B3445172}" {
+     ParentContextList {
+     }
+     UIInfo UIInfo "{64511B8716121C4E}" {
+      Name "Equip"
+     }
+     ActionTitle "Equip"
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{64483B37643F9659}" : "{61AD07E2A721AB6B}Prefabs/Items/3.ct" {
+  }
+  Hierarchy "{64483B37674D40C9}" : "{5C9922DAD24D225C}Prefabs/Items/4.ct" {
+  }
+ }
+ coords 3382.464 3.998 2168.923
+ angleY 12.563
+}

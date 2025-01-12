@@ -1,0 +1,144 @@
+GenericEntity : "{FB0F12529D2FD0DA}Prefabs/Props/Military/FieldKitchenTrailerUS_01.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SoundComponent "{64512E1B7ACBA00D}" {
+   Filenames {
+    "{C1465D34BBD466C3}Sounds/Environment/COOKING.acp"
+   }
+   OnFrameUpdate 1
+   ScriptCallbacks 1
+   IncludeInactive 1
+   SoundPoints {
+    SoundPointInfo core {
+     Offset 0 1.186 -0.9955
+    }
+   }
+  }
+  MIKE_CookingManagerComponent "{64512E1B71F9AC0F}" {
+   m_AudioSourceConfiguration SCR_AudioSourceConfiguration "{64512E1A60A37964}" {
+    m_sSoundProject "{C1465D34BBD466C3}Sounds/Environment/COOKING.acp"
+    m_sSoundEventName "SOUND_COOK"
+    m_eFlags FinishWhenEntityDestroyed
+   }
+   StoveItemPrefab "{FB0F12529D2FD0DA}Prefabs/Props/Military/FieldKitchenTrailerUS_01.et"
+  }
+  MIKE_RecipeManagerComponent "{64512E1B4F300EBE}" {
+   RecipeConfig MIKE_CfgRecipe "{64512E1A39E15B09}" {
+    weightedRecipes {
+     WeightedRecipe "{64512E1A38E257D5}" {
+      ingredients {
+       "{850240C4094FC325}Prefabs/Items/Food/RawMeat.et"
+      }
+      recipeName "Meat"
+      optimalHeatMin 380
+      optimalHeatMax 450
+      Tier1ItemResult "{850240C4094FC325}Prefabs/Items/Food/RawMeat.et"
+      Tier2ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+      Tier3ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+      Tier4ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+      Tier5ItemResult "{243F89E45014078E}Prefabs/Items/Food/CookedMeat.et"
+     }
+     WeightedRecipe "{64512E1A35089132}" {
+      ingredients {
+       "{C113B2842221D02A}Prefabs/Items/Food/RAwSteak.et"
+      }
+      recipeName "Steak"
+      Tier1ItemResult "{C113B2842221D02A}Prefabs/Items/Food/RAwSteak.et"
+      Tier2ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+      Tier3ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+      Tier4ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+      Tier5ItemResult "{84AA67098CFE32AA}Prefabs/Items/Food/CookedSteak.et"
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{64512E19E3721C7E}" {
+   Slots {
+    EntitySlotInfo control {
+     Offset -0.6294 1.1275 -1.4883
+     Angles 4.9008 -89.69209 3.5994
+     Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+     InheritParentSkeleton 1
+     DeactivatePhysicsOnAtaching 1
+    }
+    EntitySlotInfo control2 {
+     Offset -0.6294 1.118 -1.3362
+     Angles 9.9457 -89.3703 3.5994
+     Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+     InheritParentSkeleton 1
+     DeactivatePhysicsOnAtaching 1
+    }
+    EntitySlotInfo control6 {
+     Offset -0.6538 1.1088 -1.1892
+     Angles 0 -90 3.5994
+     Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+     InheritParentSkeleton 1
+     DeactivatePhysicsOnAtaching 1
+    }
+    EntitySlotInfo control3 {
+     Offset -0.6294 1.1372 -1.6427
+     Angles 0 -90 3.5994
+     Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+     InheritParentSkeleton 1
+     DeactivatePhysicsOnAtaching 1
+    }
+    EntitySlotInfo control4 {
+     Offset -0.6294 1.1464 -1.7893
+     Angles 0 -90 3.5994
+     Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+     InheritParentSkeleton 1
+     DeactivatePhysicsOnAtaching 1
+    }
+    EntitySlotInfo control5 {
+     Offset -0.2681 1.1464 -1.8742
+     Angles 0 180 0
+     Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+     InheritParentSkeleton 1
+     DeactivatePhysicsOnAtaching 1
+    }
+   }
+  }
+  ActionsManagerComponent "{64512E1985674EA7}" : "{A5DFCE4F1BAE7154}Prefabs/Props/Military/Action.ct" {
+   ActionContexts {
+    UserActionContext "{64512E198883D258}" {
+     Position PointInfo "{64512E198883D242}" {
+      Offset -0.2671 1.1405 -1.9811
+     }
+    }
+    UserActionContext "{64512E198883D24F}" {
+     Position PointInfo "{64512E198883D24E}" {
+      Offset -0.7319 1.1332 -1.3384
+     }
+    }
+    UserActionContext "{64512E198883D24B}" {
+     Position PointInfo "{64512E198883D24A}" {
+      Offset -0.7295 1.1027 -1.1958
+     }
+    }
+    UserActionContext "{64512E198883D3B5}" {
+     Position PointInfo "{64512E198883D3B4}" {
+      Offset -0.7325 1.1432 -1.7875
+     }
+    }
+    UserActionContext "{64512E198883D3B7}" {
+     Position PointInfo "{64512E198883D3B6}" {
+      Offset -0.731 1.1287 -1.4862
+     }
+    }
+    UserActionContext "{64512E198883D3B1}" {
+     Position PointInfo "{64512E198883BA35}" {
+      Offset -0.7355 1.137 -1.6433
+     }
+    }
+   }
+   additionalActions {
+    MIKE_CookingPickUpStoveAction "{64512E198883BA2A}" {
+     ParentContextList {
+     }
+    }
+   }
+  }
+ }
+ coords 3382.546 3.203 2166.832
+ angleY 90.214
+}

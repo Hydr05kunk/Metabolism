@@ -1,0 +1,90 @@
+ActionsManagerComponent {
+ Enabled 1
+ ActionContexts {
+  UserActionContext "{64512E198883D258}" {
+   ContextName "Start"
+   Position PointInfo "{64512E198883D242}" {
+    Offset -0.5486 1.1405 0.6702
+   }
+   Radius 0.5
+  }
+  UserActionContext "{64512E198883D24F}" {
+   ContextName "raiseTemp"
+   Position PointInfo "{64512E198883D24E}" {
+    Offset -0.8464 0.855 0.8095
+   }
+  }
+  UserActionContext "{64512E198883D24B}" {
+   ContextName "lower"
+   Position PointInfo "{64512E198883D24A}" {
+    Offset -0.2943 0.8562 0.8088
+   }
+  }
+  UserActionContext "{64512E198883D3B5}" {
+   ContextName "Finish"
+   Position PointInfo "{64512E198883D3B4}" {
+    Offset -0.1821 0.3968 0.8089
+   }
+  }
+  UserActionContext "{64512E198883D3B7}" {
+   ContextName "stoveStart"
+   Position PointInfo "{64512E198883D3B6}" {
+    Offset -0.5678 1.0569 0.6152
+   }
+  }
+  UserActionContext "{64512E198883D3B1}" {
+   ContextName "StopStove"
+   Position PointInfo "{64512E198883BA35}" {
+    Offset -0.9722 0.2995 0.7827
+   }
+  }
+  UserActionContext "{64512E198883BA39}" {
+   ContextName "pickup"
+   Position PointInfo "{64512E198883BA21}" {
+    Offset -0.5799 0.312 -0.0412
+   }
+   Radius 0.25
+   LineOfSightCheck 1
+  }
+ }
+ additionalActions {
+  MIKE_CookingRaiseTempUserAction "{64512E198883BA22}" {
+   ParentContextList {
+    "raiseTemp"
+   }
+  }
+  MIKE_CookingStartCookingUserAction "{64512E198883BA25}" {
+   ParentContextList {
+    "Start"
+   }
+  }
+  MIKE_CookingLowerTempUserAction "{64512E198883BA24}" {
+   ParentContextList {
+    "lower"
+   }
+  }
+  MIKE_CookingFinalizeUserAction "{64512E198883BA27}" {
+   ParentContextList {
+    "Finish"
+   }
+  }
+  MIKE_StoveStartUserAction "{64512E198883BA26}" {
+   ParentContextList {
+    "stoveStart"
+   }
+  }
+  MIKE_StoveStopUserAction "{64512E198883BA28}" {
+   ParentContextList {
+    "StopStove"
+   }
+   UIInfo UIInfo "{64512E198883BA2B}" {
+    Name "Stop Stove"
+   }
+  }
+  MIKE_CookingPickUpStoveAction "{64512E198883BA2A}" {
+   ParentContextList {
+    "pickup"
+   }
+  }
+ }
+}

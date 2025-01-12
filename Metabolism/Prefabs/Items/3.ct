@@ -1,0 +1,13 @@
+GadgetGamepadEffectsManagerComponent {
+ OwnedEffects {
+  GamepadTriggerEffect "{64483B3711888145}" {
+   Name "ADS"
+   Priority 30
+   TriggerType Left
+  }
+  GamepadTriggerEffect "{64483B3711888155}" {
+   Name "Charged"
+   Priority 30
+  }
+ }
+}

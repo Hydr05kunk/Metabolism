@@ -1,0 +1,102 @@
+GenericEntity {
+ ID "64511B859D0DD09E"
+ components {
+  SignalsManagerComponent "{64511B859D0DD0BA}" {
+  }
+  InventoryItemComponent "{64511B859D0DD0B3}" {
+   Attributes SCR_ItemAttributeCollection "{64511B859D0DD14F}" {
+    ItemDisplayName SCR_InventoryUIInfo "{64511B859D0DD14C}" {
+     Name "Beer"
+     Description "+Alcohol"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{64511B859D0DD14B}" {
+     Weight 0.01
+     SizeSetupStrategy Volume
+     ItemVolume 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{64511B859D0DD149}" {
+     AnimationInstance "{4FCBEA45CAEBC9C0}anims/workspaces/player/player_main_1h.asi"
+     AnimationIKPose "{3E5C93E85F05C6B5}Assets/Weapons/Grenades/RGD5/anims/anm/p_rgd5_ik.anm"
+    }
+    CustomAttributes {
+     ItemActionAnimAttributes "{64511B859D0DD143}" {
+      AnimationGraphTemplate "{DFFC0A34A77ADCB4}anims/workspaces/player/player_main.agr"
+      ActionAnimationCommandName "CMD_HealSelf"
+      ActionAnimDuration 10
+      AllowMovementDuringAction 1
+     }
+    }
+    CommonItemType "FOOD"
+    m_bStackable 0
+   }
+  }
+  MeshObject "{64511B859D0DD15F}" {
+   Object "{1F941A15AF4D93BF}Assets/Items/Drinks/WaterBottle/Bottle.xob"
+   Materials {
+    MaterialAssignClass "{64511B85EE07C6C1}" {
+     SourceMaterial "Bottle"
+     AssignedMaterial "{BF25E8E5F40776CF}Assets/Items/Drinks/WaterBottle/Data/BeerBottle.emat"
+    }
+   }
+  }
+  SCR_AlcoholGadgetComponent "{64511B859D0DD155}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 15
+  }
+  SCR_SoundDataComponent "{64511B859D0DD152}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{64511B859D0DD150}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{64511B859D0DD16F}" {
+     m_sSoundProject "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+    }
+    SCR_AudioSourceConfiguration "{64511B859D0DD16C}" {
+     m_sSoundProject "{CC0E5A1324E761C1}Sounds/Items/_SharedData/Drop/Items_Drop_Generic.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  ActionsManagerComponent "{64511B859D0DD167}" {
+   ActionContexts {
+    UserActionContext "{64511B859D0DD165}" {
+     ContextName "default"
+     Position PointInfo "{64511B859D0E7FA6}" {
+      Offset 0 0.1271 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{64511B859D0E7FA2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{64511B859D0E7FBD}" {
+      Name "Pick Up Fake Beer "
+     }
+     ActionTitle "Pick Up Fake Beer "
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{64511B859D0E7FBF}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{64511B859D0E7FBE}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+    }
+    GamepadTriggerEffect "{64511B859D0E7FB8}" {
+     Name "Charged"
+     Priority 30
+    }
+   }
+  }
+  RplComponent "{64511B859D0E7FBB}" {
+  }
+  Hierarchy "{64511B859D0E7FBA}" {
+  }
+ }
+ coords 3382.894 3.998 2170.541
+}
