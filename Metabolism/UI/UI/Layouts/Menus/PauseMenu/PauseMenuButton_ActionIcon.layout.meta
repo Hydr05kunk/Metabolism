@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CFF37D05A7659E5C}UI/layouts/Menus/PauseMenu/PauseMenuButton_ActionIcon.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass PS5 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

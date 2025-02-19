@@ -1,0 +1,105 @@
+FrameWidgetClass {
+ {
+  ImageWidgetClass "{648ED79B7AAA0343}" {
+   Name "Logo"
+   Slot FrameWidgetSlot "{648ED79B7AAA0362}" {
+    PositionX 21
+    OffsetLeft 21
+    PositionY 6
+    OffsetTop 6
+    SizeX 62
+    OffsetRight -83
+    SizeY 55
+    OffsetBottom -61
+   }
+   Opacity 0.1
+   Texture "{764E6758D9963407}Worlds/DayZPNG.edds"
+   Size 469 405
+  }
+  TextWidgetClass "{596565CFBE414D61}" {
+   Prefab "{596565CFBE414D61}"
+   Slot FrameWidgetSlot "{596565CFBE414D45}" {
+    Anchor 0 0 0 0
+    PositionX 1.94
+    OffsetLeft 1.94
+    PositionY 30
+    OffsetTop 30
+    SizeX 0
+    OffsetRight -1.94
+    SizeY 0
+    OffsetBottom -30
+   }
+   "Is Enabled" 0
+   "Is Visible" 0
+   IsPixelPerfect 0
+   Opacity 0.5
+   Text "DayZ Reforged"
+  }
+  HorizontalLayoutWidgetClass "{599ADB14E240A0B6}" {
+   Prefab "{599ADB14E240A0B6}"
+   {
+    OverlayWidgetClass "{599ADB152F1694A9}" {
+     Prefab "{599ADB152F1694A9}"
+     {
+      ImageWidgetClass "{597F65E4959A8A93}" {
+       Prefab "{597F65E4959A8A93}"
+       Progress 0.65
+      }
+     }
+    }
+    OverlayWidgetClass "{599ADB1440D6120D}" {
+     Prefab "{599ADB1440D6120D}"
+     {
+      ImageWidgetClass "{599ADB1CA7BCA351}" {
+       Prefab "{599ADB1CA7BCA351}"
+       Progress 0.5
+      }
+     }
+    }
+    OverlayWidgetClass "{599ADB1449235ED0}" {
+     Prefab "{599ADB1449235ED0}"
+     {
+      ImageWidgetClass "{597F65E5F0519E98}" {
+       Prefab "{597F65E5F0519E98}"
+       Progress 0.55
+      }
+     }
+    }
+    TextWidgetClass "{599175DBA38071FC}" {
+     Prefab "{599175DBA38071FC}"
+     "Is Enabled" 0
+     "Is Visible" 0
+     IsPixelPerfect 0
+    }
+    OverlayWidgetClass "{64993E65761A33DE}" {
+     Name "m_sickIndicator"
+     Slot LayoutSlot {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      ImageWidgetClass "{64993E67AEC712F2}" {
+       Name "m_sickOutline"
+       Slot OverlayWidgetSlot "{64993E67AEC7129C}" {
+       }
+       Texture "{ABAB6447C4767279}Assets/UI/EL_StatsOutlines.imageset"
+       Image "Temperature"
+       Size 45 60
+       Mask "{5E761E5C31171F1B}Assets/UI/fade.edds"
+      }
+      ImageWidgetClass "{64993E64ABDE9FF0}" {
+       Name "m_sickProgress"
+       Slot OverlayWidgetSlot "{64993E64ABDE9F9C}" {
+       }
+       Texture "{4762CA1C4E5BCCBA}Assets/UI/EL_StatsBars.imageset"
+       Image "Temperature"
+       Size 45 60
+       Mask "{5E761E5C31171F1B}Assets/UI/fade.edds"
+       Progress 0
+      }
+     }
+    }
+   }
+  }
+ }
+}
